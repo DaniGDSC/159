@@ -6,5 +6,9 @@ app = Flask(__name__)
 def home():
     return jsonify({"message": "Welcome to the Flask API!"})
 
+@app.route('/api/data')
+def get_data():
+    return jsonify({"data": [1, 2, 3, 4, 5]})
+
 if __name__ == '__main__':
     app.run(debug=True)
