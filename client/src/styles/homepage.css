@@ -1,0 +1,83 @@
+/* src/styles/homepage.css */
+
+/* homepage */
+.homepage {
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  background: #FFFFFF;
+  overflow: hidden; /* Prevent scrollbars if content overflows */
+}
+
+/* Logo (Left Rect) */
+.logo-box {
+  position: absolute;
+  width: 40vw;  /* Adjust width based on viewport */
+  height: 50vh; /* Adjust height based on viewport */
+  left: 8vw;    /* Position with respect to viewport */
+  top: 22vh;    /* Position with respect to viewport */
+  background: #D9D9D9;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slogan (Above-Right Rect) */
+.slogan-box {
+  position: absolute;
+  width: 15vw;  /* Adjust width based on viewport */
+  height: 6vh;  /* Adjust height based on viewport */
+  left: 67vw;   /* Position with respect to viewport */
+  top: 15vh;    /* Position with respect to viewport */
+  background: #D9D9D9;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Button (Below-Right Rect) */
+.button-box {
+  position: absolute;
+  width: 20vw;  /* Adjust width based on viewport */
+  height: 8vh;  /* Adjust height based on viewport */
+  left: 67vw;   /* Position with respect to viewport */
+  top: 67vh;    /* Position with respect to viewport */
+  background: #D9D9D9;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-box:hover {
+  background-color: #B8B8B8;
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+  .logo-box, .slogan-box, .button-box {
+    width: 90vw;
+    height: auto;
+  }
+
+  .logo-box {
+    top: 10vh;
+    left: 5vw;
+  }
+
+  .slogan-box {
+    top: 20vh;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+
+  .button-box {
+    top: 60vh;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+}

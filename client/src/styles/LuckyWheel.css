@@ -1,0 +1,28 @@
+/* App.css or LuckyWheel.css */
+
+/* Container full height to center content */
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.sweet-loading {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+input[type="color"] {
+  width: 100%;
+  height: 40px;
+  border: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
